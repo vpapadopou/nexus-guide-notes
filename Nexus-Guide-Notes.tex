@@ -47,64 +47,77 @@
 % Set first page style to "fancy" as it will display a different page number by default
 \thispagestyle{fancy}
 
-\section*{Nexus}
+\section*{Scaled Sorfware Development}
 \begin{itemize}
-	\item A \textbf{framework} for developing and sustaining scaled product software delivery initiatives
-	\item Uses Scrum as its building block
-	\item Consists of 3 to 9 Scrum Teams working on a single Product Backlog
-	\item The result is an \textit{integrated} Increment that meets a goal
+	\item If more than one Scrum Teams are working off the same Product Backlog and in the same codebase for a product, difficulties arise
+	\item Communication between teams, work integration and testing of the Integrated Increment becomes a challenge
+	\item The above problems become increasingly difficult when three or more Scrum Teams integrate their work into a single Increment
+\end{itemize}
+
+\section*{Scaled Sorfware Development - Team Dependencies}
+\begin{itemize}
+	\item \textbf{Requirements}\\
+	The scope of the requirements may overlap and the manner in which they are implemented may also affect multiple teams
+	\item \textbf{Domain knowledge}\\
+	Knowledge of the various business and computer systems should be distributed across the Scrum Teams to ensure they have the necessary knowledge to do their work and minimize interruptions between Scrum Teams during a Sprint
+	\item \textbf{Software and test artifacts}\\
+	Requirements are, or will be, instantiated in Sorfware
 \end{itemize}
 
 \section*{Definition of Nexus}
-\textit{Nexus (n): a relationship or connection between people or things.}
+\textit{Nexus (n): A \textbf{framework} for developing and sustaining scaled product and software delivery initiatives.}
+
+\section*{Concept}
+\begin{itemize}
+	\item Uses Scrum as building block
+	\item Multiple Scrum Teams work on a single Product Backlog
+	\item The result is an \textit{Integrated} Increment that meets a goal
+\end{itemize}
+
+\begin{tcolorbox}[colback=black!8!white,colframe=gray!50!black,title=Note,sharp corners,fonttitle=\normalsize\bfseries,fontupper=\normalsize]
+	The difference between Nexus and Scrum is that, in Nexus, more attention is paid to dependencies and interoperation between Scrum Teams delivering at least one ``Done'' Integrated Increment every Sprint
+\end{tcolorbox}
 
 \section*{Nexus Consists of}
 \begin{itemize}
-	\item Roles
-	\item Events
-	\item Artifacts
-	\item Rules
+	\item The Nexus Integration Team
+	\item Approximately 3 to 9 Scrum Teams
 \end{itemize}
 
-\section*{Dependencies Between Teams}
+\section*{Nexus Integration Team (NIT)}
 \begin{itemize}
-	\item Requirements
-	\item Domain knowledge
-	\item Software and test artifacts
+	\item Constists of:
+	\begin{itemize}
+		\item The Product Owner
+		\item A Scrum Master
+		\item \textit{One or more} Nexus Integration Team members
+	\end{itemize}
+	\item \textbf{Accountable} for ensuring that a ``Done'' Integrated Increment is produced \textit{at least} once every Sprint
+	\item Common activities include coaching, consulting and highlighting awareness of dependencies and cross-team issues
+	\item NIT members might also perform work from the Product Backlog
+	\item Composition of the Nexus Integration Team may change over time to reflect the current needs of a Nexus
 \end{itemize}
 
-\section*{Nexus vs Scrum}
-More attention is paid to dependencies and interoperation between Scrum Teams
+\begin{tcolorbox}[colback=black!8!white,colframe=gray!50!black,title=Note,sharp corners,fonttitle=\normalsize\bfseries,fontupper=\normalsize]
+	Members of the Nexus Integration Team may also be members of individual Scrum Teams. In this case, they must give priority to their work on the Nexus Integration Team
+\end{tcolorbox}
 
-\section*{Nexus Integration Team}
-\begin{itemize}
-	\item Product Owner
-	\item Scrum Master
-	\item \textit{One or more} Nexus Integration Team members
-\end{itemize}
-
-\section*{Nexus Integration Team Characteristics}
-\begin{itemize}
-	\item Members of the Nexus Integration Team are often also members of individual Scrum Teams. In this case, they must give priority to their work on the Nexus Integration Team
-	\item Nexus Integration Team might perform work from the Product Backlog
-\end{itemize}
-
-\section*{Product Owner}
+\section*{Product Owner in the NIT}
 \begin{itemize}
 	\item Responsible for maximizing the value of the Product
 	\item Nexus works off a single Product Backlog
 	\item A Product Backlog has a \textbf{single} Product Owner
 \end{itemize}
 
-\section*{Scrum Master}
+\section*{Scrum Master in the NIT}
 \begin{itemize}
 	\item Has overall responsibility for ensuring Nexus framework is understood and enacted
-	\item Can also act as Scrum Master in one or more of the Scrum Teams
+	\item May also act as Scrum Master in one or more of the Scrum Teams
 \end{itemize}
 
 \section*{Nexus Integration Team Members}
 \begin{itemize}
-	\item Are responsible for coaching and guiding the Scrum Teams in Nexus
+	\item Responsible for coaching and guiding the Scrum Teams in Nexus
 	\item If their primary responsibility is satisfied, Nexus Integration Team members may also work as Development Team members in one or more Scrum Teams
 \end{itemize}
 
