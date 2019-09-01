@@ -12,4 +12,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Bibliography
 - Latex .gitignore file
 - Information about Nexus
-- Basic information about Nexus' Roles, events and artifacts
+- Basic information about Nexus Roles, Events and Artifacts

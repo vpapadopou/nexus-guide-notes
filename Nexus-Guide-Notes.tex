@@ -47,164 +47,190 @@
 % Set first page style to "fancy" as it will display a different page number by default
 \thispagestyle{fancy}
 
-\section*{Scaled Sorfware Development}
+\section*{Scaled Software Development}
 \begin{itemize}
-	\item If more than one Scrum Teams are working off the same Product Backlog and in the same codebase for a product, difficulties arise
+	\item If more than one Scrum teams are working off the same Product Backlog and in the same codebase for a product, difficulties arise
 	\item Communication between teams, work integration and testing of the Integrated Increment becomes a challenge
-	\item The above problems become increasingly difficult when three or more Scrum Teams integrate their work into a single Increment
+	\item Problems intensify when three or more Scrum Teams integrate their work into a single Increment
 \end{itemize}
 
-\section*{Scaled Sorfware Development - Team Dependencies}
+\section*{Cross-team Dependencies}
 \begin{itemize}
 	\item \textbf{Requirements}\\
-	The scope of the requirements may overlap and the manner in which they are implemented may also affect multiple teams
+	The scope of requirements may overlap and the manner in which they are implemented may affect multiple teams
 	\item \textbf{Domain knowledge}\\
-	Knowledge of the various business and computer systems should be distributed across the Scrum Teams to ensure they have the necessary knowledge to do their work and minimize interruptions between Scrum Teams during a Sprint
+	Knowledge of the various business and computer systems should be distributed across the Scrum Teams to ensure they have the necessary knowledge to do their work and minimize interruptions between them during a Sprint
 	\item \textbf{Software and test artifacts}\\
-	Requirements are, or will be, instantiated in Sorfware
+	Requirements are, or will be, instantiated in Software
 \end{itemize}
 
-\section*{Definition of Nexus}
-\textit{Nexus (n): A \textbf{framework} for developing and sustaining scaled product and software delivery initiatives.}
-
-\section*{Concept}
+\section*{Nexus}
 \begin{itemize}
+    \item A \textit{framework} for developing and sustaining scaled product and software delivery initiatives
 	\item Uses Scrum as building block
-	\item Multiple Scrum Teams work on a single Product Backlog
-	\item The result is an \textit{Integrated} Increment that meets a goal
+	\item Multiple Scrum Teams work off a \textit{single} Product Backlog
+	\item The result is an \textit{Integrated Increment} that meets a goal
 \end{itemize}
 
 \begin{tcolorbox}[colback=black!8!white,colframe=gray!50!black,title=Note,sharp corners,fonttitle=\normalsize\bfseries,fontupper=\normalsize]
-	The difference between Nexus and Scrum is that, in Nexus, more attention is paid to dependencies and interoperation between Scrum Teams delivering at least one ``Done'' Integrated Increment every Sprint
+    Nexus is often characterized as ``the exoskeleton of Scrum''. It pays more attention to dependencies and interoperation between Scrum Teams in order to deliver \textit{at least} one ``Done'' Integrated Increment every Sprint
 \end{tcolorbox}
 
-\section*{Nexus Consists of}
+\section*{Nexus Roles}
 \begin{itemize}
-	\item The Nexus Integration Team
+	\item Nexus Integration Team (NIT)
+	\vspace{-0.5em}
+	\begin{itemize}
+	    \item Product Owner
+	    \item Scrum Master
+	    \item \textit{One or more} NIT members
+    \end{itemize}
 	\item Approximately 3 to 9 Scrum Teams
 \end{itemize}
 
-\section*{Nexus Integration Team (NIT)}
+\begin{tcolorbox}[colback=black!8!white,colframe=gray!50!black,title=Note,sharp corners,fonttitle=\normalsize\bfseries,fontupper=\normalsize]
+    We refer to the Product Owner and the Scrum Master that are part of the NIT as ``The Product Owner'' and ``The Scrum Master in the NIT''. There are no such roles as the ``Nexus Product Owner'' or ``Nexus Scrum Master''
+\end{tcolorbox}
+
+\section*{Nexus Integration Team}
 \begin{itemize}
-	\item Constists of:
-	\begin{itemize}
-		\item The Product Owner
-		\item A Scrum Master
-		\item \textit{One or more} Nexus Integration Team members
-	\end{itemize}
-	\item \textbf{Accountable} for ensuring that a ``Done'' Integrated Increment is produced \textit{at least} once every Sprint
+	\item \textit{Accountable} for ensuring that a ``Done'' Integrated Increment is produced \textit{at least} once every Sprint
 	\item Common activities include coaching, consulting and highlighting awareness of dependencies and cross-team issues
 	\item NIT members might also perform work from the Product Backlog
-	\item Composition of the Nexus Integration Team may change over time to reflect the current needs of a Nexus
+	\item Composition of the NIT may change over time to reflect the current needs of a Nexus
 \end{itemize}
 
 \begin{tcolorbox}[colback=black!8!white,colframe=gray!50!black,title=Note,sharp corners,fonttitle=\normalsize\bfseries,fontupper=\normalsize]
-	Members of the Nexus Integration Team may also be members of individual Scrum Teams. In this case, they must give priority to their work on the Nexus Integration Team
+	Members of the NIT may also be members of individual Scrum Teams. In this case, priority must be given to their work on the NIT
 \end{tcolorbox}
 
-\section*{Product Owner in the NIT}
+\section*{Product Owner - NIT}
 \begin{itemize}
-	\item Responsible for maximizing the value of the Product
-	\item Nexus works off a single Product Backlog
+	\item Nexus works off a \textbf{single} Product Backlog
 	\item A Product Backlog has a \textbf{single} Product Owner
+	\item As in Scrum, the Product Owner is responsible for maximizing the value of the Product and the work performed and integrated by the Scrum Teams in a Nexus
 \end{itemize}
 
-\section*{Scrum Master in the NIT}
+\section*{Scrum Master - NIT}
 \begin{itemize}
 	\item Has overall responsibility for ensuring Nexus framework is understood and enacted
 	\item May also act as Scrum Master in one or more of the Scrum Teams
 \end{itemize}
 
-\section*{Nexus Integration Team Members}
+\section*{NIT Members}
 \begin{itemize}
-	\item Responsible for coaching and guiding the Scrum Teams in Nexus
-	\item If their primary responsibility is satisfied, Nexus Integration Team members may also work as Development Team members in one or more Scrum Teams
+    \item Professionals who are skilled in the tools, practices and the general field of systems engineering
+	\item Responsible for coaching and guiding the Scrum teams in Nexus
+	\item Help Scrum teams understand and implement the practices and tools needed to detect dependencies and frequently integrate all artifacts to the definition of ``Done''
+	%\item Responsible for coaching and guiding the Scrum Teams in Nexus to understand and implement the practices and tools needed to detect dependencies and frequently integrate all artifacts to the definition of ``Done''
+	\item If their primary responsibility is satisfied, they may also work as Development Team members in one or more Scrum Teams
 \end{itemize}
 
 \section*{Nexus Events}
 \begin{itemize}
-	\item Refinement
+	\item Product Backlog Refinement
 	\item Nexus Sprint Planning
 	\item Nexus Daily Scrum
 	\item Nexus Sprint Review
 	\item Nexus Sprint Retrospective
 \end{itemize}
 
-\section*{Refinement}
+\begin{tcolorbox}[colback=black!8!white,colframe=gray!50!black,title=Note,sharp corners,fonttitle=\normalsize\bfseries,fontupper=\normalsize]
+	The duration of Nexus events is guided by the length of the corresponding events in the Scrum Guide. What this means is that events in Nexus \textbf{should} be time-boxed - just like events in Scrum. For example, Sprint Planning in Scrum can take up to 8 hours for a one-month Sprint; accordingly, Nexus Sprint Planning should take up to 8 hours for a one-month Sprint
+\end{tcolorbox}
+
+\section*{Product Backlog Refinement}
 \begin{itemize}
 	\item Helps the Scrum Teams forecast which team will deliver which Product Backlog Items
-	\item Identifies dependencies across Scrum Teams
-	\item After Refinement Product Backlog Items should be sufficiently independent to be worked on by a single Scrum Team without excessive conflict
-	\item Number, frequency and \textit{attendance} of refinement is based on the dependencies and uncertainty in the Product Backlog Items
-	\item Refinement will continue within each Scrum Team in order for Product Backlog Items to be ready for selection in a Nexus Sprint Planning event
+	\item Dependencies between Scrum Teams are identified and removed/minimized
+	\item Product Backlog Items are refined until they are sufficiently independent to be worked on by a single Scrum Team without excessive conflict
+	\item Refinement continues within each Scrum Team in order for Product Backlog Items to be ready for selection in a Nexus Sprint Planning event
+	\item Number, frequency, duration and attendance of Refinement is based on the dependencies and uncertainty in the Product Backlog Items
 \end{itemize}
+
+\begin{tcolorbox}[colback=black!8!white,colframe=gray!50!black,title=Note,sharp corners,fonttitle=\normalsize\bfseries,fontupper=\normalsize]
+	While in Scrum refinement is not considered an official event and the only guideance provided is that it ``usually consumes no more than 10\% of the capacity of the Development Team'', in Nexus refinement is an official event and an integral part of its flow
+\end{tcolorbox}
 
 \section*{Nexus Sprint Planning}
 \begin{itemize}
 	\item Coordinate the activities of all Scrum Teams in a Nexus for a single Sprint
-	\item Product Backlog should be adequetly refined with dependencies identified and removed or minimized
-	\item Appropriate representatives from each Scrum Team validate and make adjustments to the ordering of the work created during refinement events
-	\item All members of Scrum Teams should participate to minimize communication issues
+	%\item Product Backlog should be adequately refined with dependencies identified and removed/minimized
+	\item Appropriate representatives from each Scrum Team validate and make adjustments to the ordering of the work created during Refinement events
+	\item All Scrum Team members should be present to minimize communication issues
 	\item Product Owner discusses the \textit{Nexus Sprint Goal}
-	\item Planning continues with each Scrum Team performing their own separate Sprint Planning
-	\item Scrum teams share newly found dependencies with other Scrum Teams
+	\item Once the overall work for the Nexus is understood, planning continues with each Scrum Team performing their own separate Sprint Planning
+	\item Scrum teams should share newly found dependencies with each other
 	\item Planning is complete when each Scrum Team has finished their individual Sprint Planning events
+	\item All Product Backlog items selected for the Sprint and their dependencies should be made transparent on the \textit{Nexus Sprint Backlog}
 \end{itemize}
 
 \begin{tcolorbox}[colback=black!8!white,colframe=gray!50!black,title=Note,sharp corners,fonttitle=\normalsize\bfseries,fontupper=\normalsize]
-	All Product Backlog Items selected for this Sprint and their dependencies should be made transparent on the \textit{Nexus Sprint Backlog}
+	In order for Sprint Planning to begin, the Product Backlog should be adequately refined with dependencies identified and removed/minimized
 \end{tcolorbox}
+
+\section*{Nexus Sprint Backlog}
+\begin{itemize}
+	\item Composed by the Product Backlog items from the Sprint Backlogs of the individual Scrum Teams
+	\item Used to highlight dependencies and the flow of work during the Sprint
+\end{itemize}
 
 \section*{Nexus Sprint Goal}
 \begin{itemize}
-	\item Objective set for the Sprint
+	\item An objective set for the Sprint
 	\item Sum of all the work and Sprint Goals of the Scrum Teams
 \end{itemize}
 
+\begin{tcolorbox}[colback=black!8!white,colframe=gray!50!black,title=Note,sharp corners,fonttitle=\normalsize\bfseries,fontupper=\normalsize]
+	As in Scrum, each Scrum Team in Nexus crafts its own Sprint Goal during Sprint Planning that aligns with the overarching Nexus Sprint Goal. It also creates and maintains its individual Sprint Backlog
+\end{tcolorbox}
+
 \section*{Nexus Daily Scrum}
 \begin{itemize}
-	\item Appropriate representatives from Development Teams
 	\item Inspect current state of the integrated Increment
-	\item Identify integration issues or cross-team dependencies
+	\item Identify integration issues or newly discovered cross-team dependencies or cross-team impacts
+	\item Attendees: Appropriate representatives from individual Development Teams
+	\item When the Nexus Daily Scrum is completed, individual Scrum Teams take back issues and work that were identified during the Nexus Daily Scrum for planning inside their individual Daily Scrum events
 \end{itemize}
 
-\section*{Nexus Daily Scrum - Topic}
+\section*{Nexus Daily Scrum - Topics}
 \begin{itemize}
-	\item Was the previous day's work successfully integrated?
+	\item Was the previous day's work successfully integrated? If not, why not?
 	\item What new dependencies or impacts have been identified?
 	\item What information needs to be shared across teams?
 \end{itemize}
 
-\begin{tcolorbox}[colback=black!8!white,colframe=gray!50!black,title=Note,sharp corners,fonttitle=\normalsize\bfseries,fontupper=\normalsize]
-	At least every Nexus Daily Scrum the Nexus Sprint Backlog should be adjusted to reflect the work of the Scrum Teams within Nexus
-\end{tcolorbox}
-
-\begin{tcolorbox}[colback=black!8!white,colframe=gray!50!black,title=Note,sharp corners,fonttitle=\normalsize\bfseries,fontupper=\normalsize]
-	When the Nexus Daily Scrum is completed, individual Scrum Teams take back issues and work that were identified during the Nexus Daily Scrum for planning inside their individual Daily Scrum events
-\end{tcolorbox}
+% \begin{tcolorbox}[colback=black!8!white,colframe=gray!50!black,title=Note,sharp corners,fonttitle=\normalsize\bfseries,fontupper=\normalsize]
+% 	At least every Nexus Daily Scrum the Nexus Sprint Backlog should be adjusted to reflect the work of the Scrum Teams within Nexus
+% \end{tcolorbox}
 
 \section*{Nexus Sprint Review}
 \begin{itemize}
 	\item Held at the end of the Sprint
-	\item Replaces individual Scrum Team Sprint Reviews
+	\item \textit{Replaces} individual Scrum Team Sprint Reviews
+	\item Get feedback on the Integrated Increment and adapt the Product Backlog if needed
 	\item May not be possible to show all completed work in detail
-	\item Result: Revised Product Backlog
+	\item Attendees: All Nexus members and Stakeholders
+	\item Output: A revised Product Backlog
 \end{itemize}
 
 \section*{Nexus Sprint Retrospective}
 \begin{itemize}
-	\item Representatives from across Nexus meet and identify issues that have impacted \textit{more than a single team}
-	\item Each Scrum Team holds its own Retrospective
-	\item Using issues from the first part of the Nexus Sprint Retrospective, Scrum Teams should form actions to address these issues
-	\item Representatives from the Scrum Teams meet again and agree on how to visualize and track the identified actions
+	\item Occurs after the Sprint Review and prior to the next Nexus Sprint Planning
+	\item Inspect and adapt the Nexus and create a plan for improvements to be enacted during the next Sprint
+	\item \textbf{Part One}\\
+	Appropriate representatives from across Nexus meet and identify issues that have impacted \textit{more than a single team}
+	\item \textbf{Part Two}\\
+	Each Scrum Team holds its own Sprint Retrospective. Using issues from part one, individual Scrum Teams should form actions to address these issues
+	\item \textbf{Part Three}\\
+	Appropriate representatives from the Scrum Teams meet again and agree on how to visualize and track the identified actions
 \end{itemize}
 
-\section*{Nexus Sprint Retrospective - Subjects}
+\section*{Nexus Sprint Retrospective - Topics}
 \begin{itemize}
-	\item Was any work left undone?
-	\item Did Nexus generate technical debt?
-	\item Were all artifacts, paricularly code, frequently and successfully integrated?
-	\item Was the sorfware successfully built, tested and developed often enough to prevent the overwhelming accummulation of unresolved dependencies?
+	\item Was any work left undone? Did Nexus generate technical debt?
+	\item Were all artifacts, particularly code, frequently successfully integrated?
+	\item Was the sortware successfully built, tested and deployed often enough to prevent the overwhelming accumulation of unresolved dependencies?
 \end{itemize}
 
 \section*{Nexus Artifacts}
@@ -214,32 +240,30 @@
 	\item Integrated Increment
 \end{itemize}
 
-\begin{tcolorbox}[colback=black!8!white,colframe=gray!50!black,title=Note,sharp corners,fonttitle=\normalsize\bfseries,fontupper=\normalsize]
-	Product Backlog Items are deemed ``Ready'' for the Nexus Sprint Planning when Scrum Teams can select items to be done with no or minimal dependencies with other Scrum Teams
-\end{tcolorbox}
+\section*{Integrated Increment}
+\begin{itemize}
+	\item Represents sum of all integrated work completed by a Nexus
+	\item \textit{Must} be usable and potentially releasable
+	\item \textit{Must} meet the definition of ``Done''
+	\item Inspected during the Nexus Sprint Review
+\end{itemize}
 
 \begin{tcolorbox}[colback=black!8!white,colframe=gray!50!black,title=Note,sharp corners,fonttitle=\normalsize\bfseries,fontupper=\normalsize]
 	Nexus Sprint Backlog is updated daily often as part of the Nexus Daily Scrum
 \end{tcolorbox}
 
-\section*{Integrated Increment}
-\begin{itemize}
-	\item Represents sum of integrated work completed by a Nexus
-	\item Must be usable and potentially releasable
-	\item Must meet definition of ``Done''
-	\item Inspected during Nexus Sprint Review
-\end{itemize}
-
 \section*{Definition of ``Done''}
 \begin{itemize}
-	\item Nexus Integration Team is responsible for a Definition of ``Done'' that can be applied to the Integrated Increment developed each Sprint
-	\item All Scrum Teams adhere to this Definition of ``Done''
+	\item The Nexus Integration Team is \textit{responsible} for a definition of ``Done'' that can be applied to the Integrated Increment developed each Sprint
+	\item All Scrum Teams \textbf{adhere to} this definition of ``Done''
 	\item Individual Scrum Teams may choose to apply a more stringent Definition of ``Done'' but cannot apply less rigorous criteria than those agreed for the Increment
 \end{itemize}
 
-\begin{tcolorbox}[colback=black!8!white,colframe=gray!50!black,title=Note,sharp corners,fonttitle=\normalsize\bfseries,fontupper=\normalsize]
-	The Nexus Integration Team is accountable for ensuring that a ``Done'' Integrated Increment is produced at least once every Sprint
-\end{tcolorbox}
+\section*{Sprint Progress}
+\begin{itemize}
+	\item The \textit{Development Teams} use the Nexus Daily Scrum to inspect progress toward the Nexus Sprint Goal
+	\item At least every Nexus Daily Scrum the Nexus Sprint Backlog should be adjusted to reflect the current understanding of the Scrum Teams' work within the Nexus
+\end{itemize}
 
 \nocite{*}
 \bibliographystyle{plain}
